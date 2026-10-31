@@ -1,25 +1,10 @@
-# Academic Project Page Template
+# Evidential Uncertainty-Guided Boundary Project Page
 
-> **Update (September 2025)**: This template has been modernized with better design, SEO, and mobile support. For the original version, see the [original-version branch](https://github.com/eliahuhorwitz/Academic-project-page-template/tree/original-version).
+Project page for "Exploring the Connection Between Uncertainty and Tissue Boundaries in Medical Image Segmentation"
 
-A clean, responsive template for academic project pages.
+Authors: Na Zeng, Qiao Lin, Xingyue Wang, Jiang Liu, Jonathan M. Garibaldi
 
-
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
-
-
+Affiliations: University of Nottingham Ningbo China; Southern University of Science and Technology
 
 ## Start using the template
 To start using the template click on `Use this Template`.
