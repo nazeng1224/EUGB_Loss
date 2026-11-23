@@ -226,25 +226,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -254,7 +235,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Automatic medical image segmentation, as a prerequisite for clinical quantitative analysis, forms the basis of computer-aided diagnosis. However, blurry object boundaries caused by factors such as imaging quality and inherent physiological properties of tissues or lesions are the main causes of imprecise segmentation. This aligns with the common understanding that high uncertainty and misclassification tend to occur at boundaries in segmentation. To address the challenge, we investigate this phenomenon and explore the connection between uncertainty and tissue boundaries by analysing various tissues. Then an Evidential Uncertainty-Guided Boundary (EUGB) loss is further proposed to demonstrate that uncertainty information can indeed facilitate combating boundary segmentation errors. The proposed EUGB loss not only emphasizes challenging pixels along blurry boundaries using evidential uncertainty, but also introduces a regularization term that constrains uncertainty learning by penalizing incorrect predictions and reinforcing correct ones. The effectiveness of the proposed EUGB loss is verified in the public LIDC-IDRI, ISIC 2018, and OCTA-500 datasets with two classic medical image segmentation networks (U-Net and TransU-Net). Experimental results demonstrate that the proposed loss outperforms seven other segmentation loss functions in terms of boundary segmentation, while maintaining competitive region-level segmentation accuracy. Beyond introducing a new loss function, this paper provides empirical insights for selecting appropriate loss functions across different application scenarios. We systematically analyze the strengths and limitations of existing losses from multiple perspectives, including reliability and dataset characteristics. This analysis offers practical insights that enable researchers and practitioners to optimize segmentation performance based on specific data attributes.
           </p>
         </div>
       </div>
