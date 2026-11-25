@@ -238,6 +238,23 @@
             Automatic medical image segmentation, as a prerequisite for clinical quantitative analysis, forms the basis of computer-aided diagnosis. However, blurry object boundaries caused by factors such as imaging quality and inherent physiological properties of tissues or lesions are the main causes of imprecise segmentation. This aligns with the common understanding that high uncertainty and misclassification tend to occur at boundaries in segmentation. To address the challenge, we investigate this phenomenon and explore the connection between uncertainty and tissue boundaries by analysing various tissues. Then an Evidential Uncertainty-Guided Boundary (EUGB) loss is further proposed to demonstrate that uncertainty information can indeed facilitate combating boundary segmentation errors. The proposed EUGB loss not only emphasizes challenging pixels along blurry boundaries using evidential uncertainty, but also introduces a regularization term that constrains uncertainty learning by penalizing incorrect predictions and reinforcing correct ones. The effectiveness of the proposed EUGB loss is verified in the public LIDC-IDRI, ISIC 2018, and OCTA-500 datasets with two classic medical image segmentation networks (U-Net and TransU-Net). Experimental results demonstrate that the proposed loss outperforms seven other segmentation loss functions in terms of boundary segmentation, while maintaining competitive region-level segmentation accuracy. Beyond introducing a new loss function, this paper provides empirical insights for selecting appropriate loss functions across different application scenarios. We systematically analyze the strengths and limitations of existing losses from multiple perspectives, including reliability and dataset characteristics. This analysis offers practical insights that enable researchers and practitioners to optimize segmentation performance based on specific data attributes.
           </p>
         </div>
+
+        <br>
+
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            In this paper, we delve into the phenomenon that uncertainty and mis-segmentation often occur at boundaries, providing empirical evidence to support this observation. The empirical analysis demonstrates that uncertainty offers a promising  alternative for improving boundary segmentation in medical images. Uncertainty can serve as a natural indicator of unreliable boundary predictions and actively contribute to the optimization process, rather than functioning solely as an evaluation tool for quantifying model uncertainty. Therefore, Evidential Uncertainty-Guided Boundary (EUGB) loss is proposed to exert the potential of uncertainty information in facilitating boundary segmentation. The EUGB loss consists of two components: the Uncertainty-weighted Cross-Entropy (UCE) loss and the uncertainty-based regularization term.
+          </p>
+          <p>
+            <b>(1) Uncertainty-weighted cross-entropy loss.</b> Pixel-wise evidential uncertainty is naturally integrated into the pixel-wise cross-entropy (CE) loss to emphasize boundary pixels with high uncertainty.
+          </p>
+          <p>
+            <b>(2) Uncertainty-based regularization.</b> This regularization term employs distinct optimization schemes for correctly segmented and mis-segmented pixels, constraining the uncertainty learning to better align with the objective of boundary segmentation. Specifically,  it consists of $\mathcal{L}_{Entropy}$ and $\mathcal{L}_{KL}$, which encourages low uncertainty for correct predictions and high uncertainty for incorrect predictions, respectively.
+          </p>
+        </div>
+        
       </div>
     </div>
   </div>
