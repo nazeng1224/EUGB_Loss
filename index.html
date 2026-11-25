@@ -254,6 +254,14 @@
             <b>(2) Uncertainty-based regularization.</b> This regularization term employs distinct optimization schemes for correctly segmented and mis-segmented pixels, constraining the uncertainty learning to better align with the objective of boundary segmentation. Specifically,  it consists of $\mathcal{L}_{Entropy}$ and $\mathcal{L}_{KL}$, which encourages low uncertainty for correct predictions and high uncertainty for incorrect predictions, respectively.
           </p>
         </div>
+
+        <div class="content has-text-justified">
+            <img src="static/images/SurgFM.png" alt="SurgFM Architecture" style="width: 100%; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 2rem;">
+              <b>(a)</b> Frame-similarity sampling strategy. From a temporal sliding window, frame pairs with strong visual overlap are selected to provide stable training signals, ensuring SurgFM learns robust correspondences despite viewpoint changes and specular highlights typical of endoscopic video.
+              <b>(b)</b> SurgFM structure. Lightweight low-rank adapters are inserted into the MLP layers of both encoder and decoder blocks; backbone weights are frozen, while position embeddings, decoder embeddings, and prediction heads remain unfrozen.
+            </p>
+          </div>
         
       </div>
     </div>
