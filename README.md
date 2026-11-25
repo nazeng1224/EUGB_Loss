@@ -6,57 +6,16 @@ Authors: Na Zeng, Qiao Lin, Xingyue Wang, Jiang Liu, Jonathan M. Garibaldi
 
 Affiliations: University of Nottingham Ningbo China; Southern University of Science and Technology
 
-## Start using the template
-To start using the template click on `Use this Template`.
+## Abstract
+Automatic medical image segmentation, as a prerequisite for clinical quantitative analysis, forms the basis of computer-aided diagnosis. However, blurry object boundaries caused by factors such as imaging quality and inherent physiological properties of tissues or lesions are the main causes of imprecise segmentation. This aligns with the common understanding that high uncertainty and misclassification tend to occur at boundaries in segmentation. To address the challenge, we investigate this phenomenon and explore the connection between uncertainty and tissue boundaries by analysing various tissues. Then an Evidential Uncertainty-Guided Boundary (EUGB) loss is further proposed to demonstrate that uncertainty information can indeed facilitate combating boundary segmentation errors. The proposed EUGB loss not only emphasizes challenging pixels along blurry boundaries using evidential uncertainty, but also introduces a regularization term that constrains uncertainty learning by penalizing incorrect predictions and reinforcing correct ones. The effectiveness of the proposed EUGB loss is verified in the public LIDC-IDRI, ISIC 2018, and OCTA-500 datasets with two classic medical image segmentation networks (U-Net and TransU-Net). Experimental results demonstrate that the proposed loss outperforms seven other segmentation loss functions in terms of boundary segmentation, while maintaining competitive region-level segmentation accuracy. Beyond introducing a new loss function, this paper provides empirical insights for selecting appropriate loss functions across different application scenarios. We systematically analyze the strengths and limitations of existing losses from multiple perspectives, including reliability and dataset characteristics. This analysis offers practical insights that enable researchers and practitioners to optimize segmentation performance based on specific data attributes.
 
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+## Usage
 
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+Open index.html in a web browser, or visit the deployed GitHub Pages site.
 
-## What's New
+## Code
 
-- Modern, clean design with better mobile support
-- Improved SEO with proper meta tags and structured data
-- Performance improvements (lazy loading, optimized assets)
-- More Works dropdown
-- Copy button for BibTeX citations
-- Better accessibility
-
-## Components
-
-- Teaser video
-- Image carousel
-- YouTube video embedding
-- Video carousel
-- PDF poster viewer
-- BibTeX citation
-
-## Customization
-
-The HTML file has TODO comments showing what to replace:
-
-- Paper title, authors, institution, conference
-- Links (arXiv, GitHub, etc.)
-- Abstract and descriptions  
-- Videos, images, and PDFs
-- Related works in the dropdown
-- Meta tags for SEO and social sharing
-
-### Meta Tags
-The template includes meta tags for better search engine visibility and social media sharing. These appear in the `<head>` section and help with:
-- Google Scholar indexing
-- Social media previews (Twitter, Facebook, LinkedIn)
-- Search engine optimization
-
-Create a 1200x630px social preview image at `static/images/social_preview.png`.
-
-## Tips
-
-- Compress images with [TinyPNG](https://tinypng.com)
-- Use YouTube for large videos (>10MB)  
-- Replace the favicon in `static/images/`
-- Works with GitHub Pages
+Coming soon!
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
