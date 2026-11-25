@@ -256,10 +256,11 @@
         </div>
 
         <div class="content has-text-justified">
-            <img src="static/images/SurgFM.png" alt="SurgFM Architecture" style="width: 100%; margin-bottom: 1rem;">
+            <img src="static/images/schematic_comparison.png" alt="Schematic Comparison" style="width: 100%; margin-bottom: 1rem;">
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 2rem;">
-              <b>(a)</b> Frame-similarity sampling strategy. From a temporal sliding window, frame pairs with strong visual overlap are selected to provide stable training signals, ensuring SurgFM learns robust correspondences despite viewpoint changes and specular highlights typical of endoscopic video.
-              <b>(b)</b> SurgFM structure. Lightweight low-rank adapters are inserted into the MLP layers of both encoder and decoder blocks; backbone weights are frozen, while position embeddings, decoder embeddings, and prediction heads remain unfrozen.
+              Schematic comparison of the regularization terms in previous Evi loss and the proposed EUGB loss. $c$ in the diagram denotes the correct class of a given pixel, while $k\ (k\neq c)$ represents the remaining classes.
+              <b>(a)</b> The KL divergence term in Evi loss treats all pixels uniformly during optimization.
+              <b>(b)</b> The proposed EUGB loss employs distinct optimization schemes for correctly segmented and mis-segmented pixels, constraining the uncertainty learning from the perspective that better aligns with the objective of boundary segmentation.
             </p>
           </div>
         
