@@ -382,6 +382,13 @@
         </div>
 
         <div class="content has-text-justified">
+            <img src="static/images/pipeline.png" alt="EUGB Loss Pipeline" style="width: 100%; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #666; margin-bottom: 2rem;">
+              Pipeline of the proposed evidential uncertainty-guided boundary (EUGB) loss. $\mathcal{L}_{UCE}$ emphasizes challenging boundary pixels through evidential uncertainty, while the regularization term $\mathcal{L}_{Reg}$, composed of $\mathcal{L}_{Entropy}$ and $\mathcal{L}_{KL}$, encourages low uncertainty for correct predictions and high uncertainty for incorrect predictions.
+            </p>
+          </div>
+
+        <div class="content has-text-justified">
             <img src="static/images/schematic_comparison.png" alt="Schematic Comparison" style="width: 100%; margin-bottom: 1rem;">
             <p style="font-size: 0.9rem; color: #666; margin-bottom: 2rem;">
               Schematic comparison of the regularization terms in previous Evi loss and the proposed EUGB loss. $c$ in the diagram denotes the correct class of a given pixel, while $k\ (k\neq c)$ represents the remaining classes.
