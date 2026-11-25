@@ -11,7 +11,7 @@ Automatic medical image segmentation, as a prerequisite for clinical quantitativ
 
 ## Usage
 
-Open index.html in a web browser, or visit the deployed GitHub Pages site.
+Open index.html in a web browser, or visit the deployed GitHub Pages site https://nazeng1224.github.io/EUGB_Loss/.
 
 ## Code
 
